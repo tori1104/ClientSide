@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+        <script type="text/javascript" src="https://code.angularjs.org/1.5.5/angular-route.min.js"></script>
+	
+		
+		<script type="text/javascript" src="app.js"></script>
+      
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Victoria Humphrey: DWD 257</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<style type="text/css">
+	.formSearch {
+	border-radius: 28px;
+	background-color: #EFEFEF;
+	text-align: center;
+	position: absolute;
+	margin-top: -4px;
+}
+
+    .navbarMod {
+	background-color: #FFFFFF;
+	-webkit-box-shadow: 0px 0px #FFFFFF;
+	box-shadow: 0px 0px #FFFFFF;
+}
+    .containerMod {
+	margin-left: 150px;
+	margin-right: 150px;
+}
+    body {
+	background-color: #EFEFEF;
+}
+	.afterNav {
+	background-color: #DCDCDC;
+	clear: both;
+	height: 0%;
+	}
+	.header {
+	background-color: #FFFFFF;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	}
+    .brandMod {
+	padding-top: 20px;
+}
+    .formMod {
+	float: left;
+}
+    </style>
+
+	<!--Victoria Humphrey 
+    Homework 3: Instagram page
+    DWD 257-->
+    <!--4/21/16-->
+
+    
+    
+  </head>
+  <header class="header">
+  	<div class="container-fluid containerMod">
+	  <nav>
+	    <div class="container-fluid">
+	      <!-- Brand and toggle get grouped for better mobile display -->
+	      <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+	        <a class="navbar-brand brandMod" href="#">Instagram</a></div>
+	      <!-- Collect the nav links, forms, and other content for toggling -->
+	      <div class="collapse navbar-collapse navbarMod" id="defaultNavbar1">
+	        <ul class="nav navbar-nav">
+            </ul>
+	        <form class="navbar-form formMod" role="search">
+	          <div class="form-group">
+	            <input type="text" class="form-control formSearch" placeholder="Search">
+              </div>
+            </form>
+	        <ul class="nav navbar-nav navbar-right">
+	          <li><a href="https://www.instagram.com/explore/" ><img src="images/location_icon.jpg" width="32" height="33" alt=""/></a></li>
+              <li><a href="#" ><img src="images/heart_icon.jpg" width="32" height="33" alt=""/></a></li>
+              <li><a href="https://www.instagram.com/tori4ever1104/" ><img src="images/profile_icon.jpg" width="32" height="33" alt=""/></a></li>
+            </ul>
+              </li>
+            </ul>
+          </div>
+	      <!-- /.navbar-collapse -->
+        </div>
+	    <!-- /.container-fluid -->
+      </nav>
+    </div>
+	<script src="js/bootstrap.js"></script>
+</header>
+  <body>
+<div class="post" ng-repeat="post in ctrl.posts">
+      <div class="panel panel-default">
+    </div>
+      </div>
+  </body>
+</html>

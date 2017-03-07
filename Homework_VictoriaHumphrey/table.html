@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html ng-app="midterm">
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script
+	src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+<script type="text/javascript" src="controller.js"></script>
+
+<style>
+.table {
+	text-align:center;
+}
+.btn {
+	color: #000;
+	background-color: #69F;
+}
+</style>
+</head>
+<body ng-controller="nameCtrl">
+<form class="form-horizontal" role="form" ng-submit="addRow()">
+	<div class="form-group">
+		<label>Name</label>
+			<input type="text" class="form-control" name="name" 
+				ng-model="name" />
+	</div>
+	<div class="form-group">
+    <label>Last Name</label>
+    <input type="text" class="form-control" name="Last Name" ng-model="lastname" />
+	</div>
+	<div class="form-group">
+    <label>Grade</label>
+    <input type="text" class="form-control" name="grade" ng-model="grade" />
+	</div>
+	<div class="form-group">								
+    <input type="submit" value="Submit" class="btn btn-primary"/>
+	</div>
+</form>
+			
+<table width="466" height="48" class="table">
+	<tr>
+		<th>First Name
+		</th>
+		<th>Last Name
+		</th>
+		<th>Grade
+		</th>
+	</tr>
+	<tr ng-repeat="students in data">
+		<td>{{students.name}}
+		</td>
+		<td>{{students.lastname}}
+		</td>
+		<td>{{students.grade}}
+        </td>
+	</tr>
+</table>		
+    
+    
+    
+</body>
+

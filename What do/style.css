@@ -1,0 +1,60 @@
+.post{
+    width: 1080px;
+    margin:0px auto 0px auto;
+    
+}
+
+.profilepic{
+    border-radius: 50%;
+}
+
+.posterprofile{
+    color: cornflowerblue;
+    margin:3px 0px 3px 3px;
+    text-decoration: none;
+}
+
+.panel-title a:link {
+    text-decoration: none;
+    color: cornflowerblue;
+    margin-left: 5px;
+}
+
+.panel-title a:visited {
+    text-decoration: none;
+    color: cornflowerblue;
+    margin-left: 5px;
+}
+
+.panel-title a:hover {
+    text-decoration: none;
+    color: cornflowerblue;
+    margin-left: 5px;
+}
+
+.panel-title a:active {
+    text-decoration: none;
+    color: cornflowerblue;
+    margin-left: 5px;
+}
+
+.comments{
+    color: darkgray;
+    margin:3px 0px 3px 5px;
+}
+
+.break{
+    border-color:darkgray;
+}
+
+.likes{
+    color: darkgray;
+}
+
+.picposted{
+    margin-left:25px;
+    
+}
+
+
+

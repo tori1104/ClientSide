@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+
+<html ng-app="myApp">
+    <head>
+        <title>ClientSide class</title>
+		
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+	
+		
+		<script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="controllers/app.js"></script>
+        <script type="text/javascript" src="controllers/second.js"></script>
+</head>
+<body >
+		<header>
+            <nav class="navbar navbar-default">
+              <div class="container-fluid" >
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="#">
+                    <span class="glyphicon glyphicon-tag"> Client-Side-Programming</span>
+                  </a>
+                </div>
+              </div>
+            </nav>
+		</header>
+		<main class="container" ng-controller="mainController as ctrl">
+<div class="panel panel-default">
+  <div class="panel-body">
+    Instagram
+  </div>
+</div>
+
+    <div class="post" ng-repeat="post in ctrl.posts">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <a class="posterprofile" href="#">
+                        <img alt="Profile pic" src="assets/profile%20pic.jpeg" class="profilepic">2edgy4me
+            </a>
+                </h3>
+            </div>
+                <div class="panel-body">
+                <img src="http://img01.deviantart.net/0c01/i/2016/113/3/c/psalm_119_103_by_kevron2001-d9zxrr5.jpg" class="picposted"/>
+                   <div class="panel-footer"><p class="likes">4 likes</p>
+                        <a class="posterprofile">2edgy4me</a><p class="caption"> {{post.caption}} <a class="tag">#getrektm8</a></p>
+                        
+                        <p class="comments">comments...</p>
+                        <p class="usercomments" ng-repeat="comments"><a class="posterprofile">maymaymaster420</a>  {{comment.content}}<a class="tag">#360quikscope</a></p>
+                        <hr class="break"/>
+                       <i class="glyphicon glyphicon-heart" src="assets/likeiconuncheck.png"></i>
+                       <p class="comment">Add a comment..<input type="text" name="comment" class="comment"></p>
+                       
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+    <br/>
+    <br/>
+    
+    <div class="post">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <a class="posterprofile" href="#">
+                        <img alt="Profile pic" src="assets/profile%20pic.jpeg" class="profilepic">2edgy4me
+            </a>
+                </h3>
+            </div>
+                <div class="panel-body">
+                <img src="{{post.image}}" class="picposted"/>
+                    <div class="panel-footer"><p class="likes">4 likes</p>
+                        <p class="caption"><a class="posterprofile">2edgy4me</a> I stole this pic from google. <a class="tag">#getrektm8</a></p>
+                        
+                        <p class="comments">comments...</p>
+                        <p class="usercomments"><a class="posterprofile">maymaymaster420</a>  do et 4 da lols<a class="tag">#360quikscope</a></p>
+                        <hr class="break"/>
+                       <i class="glyphicon glyphicon-heart" src="assets/likeiconuncheck.png"></i><p class="comment">Add a comment..<input type="text" name="comment" class="comment"></p>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </main>
+	</body>
+</html>	
